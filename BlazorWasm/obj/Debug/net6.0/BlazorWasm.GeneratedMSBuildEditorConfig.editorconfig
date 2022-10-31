@@ -11,73 +11,69 @@ build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = BlazorWasm
 build_property.RootNamespace = BlazorWasm
-build_property.ProjectDir = D:\VIA\DNP1\DNP3\DNP3\BlazorWasm\
+build_property.ProjectDir = C:\Users\bhup0\Documents\GitHub\DNP3\BlazorWasm\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\VIA\DNP1\DNP3\DNP3\BlazorWasm
+build_property.MSBuildProjectDirectory = C:\Users\bhup0\Documents\GitHub\DNP3\BlazorWasm
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/VIA/DNP1/DNP3/DNP3/BlazorWasm/App.razor]
+[C:/Users/bhup0/Documents/GitHub/DNP3/BlazorWasm/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VIA/DNP1/DNP3/DNP3/BlazorWasm/Pages/BlockPageWithPolicy.razor]
+[C:/Users/bhup0/Documents/GitHub/DNP3/BlazorWasm/Pages/BlockPageWithPolicy.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmxvY2tQYWdlV2l0aFBvbGljeS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VIA/DNP1/DNP3/DNP3/BlazorWasm/Pages/Counter.razor]
+[C:/Users/bhup0/Documents/GitHub/DNP3/BlazorWasm/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VIA/DNP1/DNP3/DNP3/BlazorWasm/Pages/FetchData.razor]
+[C:/Users/bhup0/Documents/GitHub/DNP3/BlazorWasm/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VIA/DNP1/DNP3/DNP3/BlazorWasm/Pages/Index.razor]
+[C:/Users/bhup0/Documents/GitHub/DNP3/BlazorWasm/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VIA/DNP1/DNP3/DNP3/BlazorWasm/Pages/MustBeLoggedInToView.razor]
+[C:/Users/bhup0/Documents/GitHub/DNP3/BlazorWasm/Pages/MustBeLoggedInToView.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXVzdEJlTG9nZ2VkSW5Ub1ZpZXcucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VIA/DNP1/DNP3/DNP3/BlazorWasm/Pages/PolicyExampleManual.razor]
+[C:/Users/bhup0/Documents/GitHub/DNP3/BlazorWasm/Pages/PolicyExampleManual.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9saWN5RXhhbXBsZU1hbnVhbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VIA/DNP1/DNP3/DNP3/BlazorWasm/Pages/PolicyExampleWithComponent.razor]
+[C:/Users/bhup0/Documents/GitHub/DNP3/BlazorWasm/Pages/PolicyExampleWithComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9saWN5RXhhbXBsZVdpdGhDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VIA/DNP1/DNP3/DNP3/BlazorWasm/Pages/ShowCredentialsAuthState.razor]
+[C:/Users/bhup0/Documents/GitHub/DNP3/BlazorWasm/Pages/ShowCredentialsAuthState.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hvd0NyZWRlbnRpYWxzQXV0aFN0YXRlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VIA/DNP1/DNP3/DNP3/BlazorWasm/Pages/ShowCredentialsContext.razor]
+[C:/Users/bhup0/Documents/GitHub/DNP3/BlazorWasm/Pages/ShowCredentialsContext.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hvd0NyZWRlbnRpYWxzQ29udGV4dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VIA/DNP1/DNP3/DNP3/BlazorWasm/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+[C:/Users/bhup0/Documents/GitHub/DNP3/BlazorWasm/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VIA/DNP1/DNP3/DNP3/BlazorWasm/_Imports.razor]
+[C:/Users/bhup0/Documents/GitHub/DNP3/BlazorWasm/Shared/Navbar.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdmJhci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bhup0/Documents/GitHub/DNP3/BlazorWasm/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VIA/DNP1/DNP3/DNP3/BlazorWasm/Pages/Login.razor]
+[C:/Users/bhup0/Documents/GitHub/DNP3/BlazorWasm/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ggyo7swwbw
 
-[D:/VIA/DNP1/DNP3/DNP3/BlazorWasm/Pages/LoginButtons.razor]
+[C:/Users/bhup0/Documents/GitHub/DNP3/BlazorWasm/Pages/LoginButtons.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5CdXR0b25zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-lhd5b4yoyf
-
-[D:/VIA/DNP1/DNP3/DNP3/BlazorWasm/Shared/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-2ar46ifnr2
-
-[D:/VIA/DNP1/DNP3/DNP3/BlazorWasm/Shared/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-oede2f5y32

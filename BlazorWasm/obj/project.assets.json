@@ -1844,19 +1844,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alexc\\.nuget\\packages\\": {}
+    "C:\\Users\\bhup0\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VIA\\DNP1\\DNP3\\DNP3\\BlazorWasm\\BlazorWasm.csproj",
+      "projectUniqueName": "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\BlazorWasm\\BlazorWasm.csproj",
       "projectName": "BlazorWasm",
-      "projectPath": "D:\\VIA\\DNP1\\DNP3\\DNP3\\BlazorWasm\\BlazorWasm.csproj",
-      "packagesPath": "C:\\Users\\alexc\\.nuget\\packages\\",
-      "outputPath": "D:\\VIA\\DNP1\\DNP3\\DNP3\\BlazorWasm\\obj\\",
+      "projectPath": "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\BlazorWasm\\BlazorWasm.csproj",
+      "packagesPath": "C:\\Users\\bhup0\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\BlazorWasm\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\alexc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\bhup0\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -1868,8 +1868,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\VIA\\DNP1\\DNP3\\DNP3\\Shared\\Shared.csproj": {
-              "projectPath": "D:\\VIA\\DNP1\\DNP3\\DNP3\\Shared\\Shared.csproj"
+            "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\Shared\\Shared.csproj"
             }
           }
         }
@@ -1912,7 +1912,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-            "version": "[6.0.9, 6.0.9]"
+            "version": "[6.0.8, 6.0.8]"
           }
         ],
         "frameworkReferences": {
@@ -1920,7 +1920,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\bhup0\\.dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
