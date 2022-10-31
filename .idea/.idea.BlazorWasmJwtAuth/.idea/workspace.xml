@@ -7,52 +7,16 @@
     <projectFile profileName="WebApi">WebApi/WebApi.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="941a1310-7a6c-42c8-bbad-6e631314bcdd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.BlazorWasmJwtAuth/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorWasm/obj/BlazorWasm.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorWasm/obj/BlazorWasm.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorWasm/obj/BlazorWasm.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorWasm/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorWasm/obj/Debug/net6.0/BlazorWasm.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorWasm/obj/Debug/net6.0/BlazorWasm.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorWasm/obj/Debug/net6.0/BlazorWasm.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorWasm/obj/Debug/net6.0/BlazorWasm.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorWasm/obj/Debug/net6.0/BlazorWasm.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorWasm/obj/Debug/net6.0/BlazorWasm.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorWasm/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorWasm/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorWasm/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shared/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shared/obj/Debug/net6.0/Shared.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shared/obj/Debug/net6.0/Shared.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shared/obj/Debug/net6.0/Shared.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shared/obj/Debug/net6.0/Shared.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shared/obj/Debug/net6.0/Shared.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shared/obj/Debug/net6.0/Shared.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shared/obj/Shared.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shared/obj/Shared.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shared/obj/Shared.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shared/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shared/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shared/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/obj/Debug/net6.0/WebApi.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/obj/Debug/net6.0/WebApi.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/obj/Debug/net6.0/WebApi.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/obj/Debug/net6.0/WebApi.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/obj/Debug/net6.0/WebApi.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/obj/Debug/net6.0/WebApi.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/obj/WebApi.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/obj/WebApi.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/obj/WebApi.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/obj/rider.project.restore.info" afterDir="false" />
+    <list default="true" id="941a1310-7a6c-42c8-bbad-6e631314bcdd" name="Changes" comment="Second Commit (idk what is happenin)">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BlazorWasmJwtAuth/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlazorWasmJwtAuth/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/BlazorWasm/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -145,7 +109,23 @@
       <option name="presentableId" value="Default" />
       <updated>1667219738914</updated>
       <workItem from="1667219743929" duration="38000" />
+      <workItem from="1667219800376" duration="1091000" />
     </task>
+    <task id="LOCAL-00001" summary="First Commit (Troels)">
+      <created>1667220085445</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667220085445</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Second Commit (idk what is happenin)">
+      <created>1667220262639</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667220262639</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,5 +147,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="First Commit (Troels)" />
+    <MESSAGE value="Second Commit (idk what is happenin)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Commit (idk what is happenin)" />
   </component>
 </project>
