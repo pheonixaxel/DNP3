@@ -1,4 +1,5 @@
 ﻿using Application.IUserDao;
+using Shared.DTOs;
 using Shared.Models;
 
 namespace FileData.DAOs;
@@ -30,5 +31,30 @@ public class UserFileDao : IUserDao
     {
         User? existing = context.Users.FirstOrDefault(u => u.UserName.Equals(userName, StringComparison.OrdinalIgnoreCase));
         return Task.FromResult(existing);
+    }
+
+    public Task<User> CreateAsync(UserCreationDto userCreationDto)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<IEnumerable<User>> GetAsync()
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<User?> GetByIdAsync(int id)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task DeleteAsync(int id)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task UpdateAsync(User updated)
+    {
+        throw new NotImplementedException();
     }
 }
