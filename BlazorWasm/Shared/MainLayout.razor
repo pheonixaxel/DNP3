@@ -1,13 +1,18 @@
-﻿@inherits LayoutComponentBase
-<Navbar />
+@inherits LayoutComponentBase
+@using Login
 
-<main>
-    <article class="content px-4">
-        @Body
-    </article>
-</main>
+<div class="page">
+    <div class="sidebar">
+        <NavMenu/>
+    </div>
 
-<RadzenDialog />
-<RadzenNotification />
-<RadzenContextMenu />
-<RadzenTooltip />
+    <main>
+        <div class="top-row px-4">
+            <LoginButtons/>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
