@@ -7,5 +7,5 @@ public class Post
     public string Content { get; set; }
     public DateTime Created { get; set; }
     public DateTime? Updated { get; set; }
-    public string AuthorId { get; set; }
+    public User OwnerId { get; set; }
 }
