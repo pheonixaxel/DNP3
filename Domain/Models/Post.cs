@@ -8,6 +8,4 @@ public class Post
     public DateTime Created { get; set; }
     public DateTime? Updated { get; set; }
     public string AuthorId { get; set; }
-    public ApplicationUser Author { get; set; }
-    public ICollection<Comment> Comments { get; set; }
 }
