@@ -1,5 +1,6 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
+using Shared.Models;
 
 namespace Shared.DTOs;
 
@@ -11,13 +12,7 @@ public class UserCreationDto
     public UserCreationDto(string userName, string password)
     {
         UserName = userName;
-        string hashedPassword = string.Empty;
-        using (var sha256 = SHA256.Create())
-        {
-            var hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
-            hashedPassword = BitConverter.ToString(hashedBytes).Replace("-", "").ToLower();
-        }
-        Password = hashedPassword;
+        Password = password;
     }
     
 }
