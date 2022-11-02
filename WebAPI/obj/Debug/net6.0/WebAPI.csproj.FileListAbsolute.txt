@@ -31,3 +31,4 @@ D:\VIA\DNP1\DNP31\DNP3\WebAPI\bin\Debug\net6.0\FileData.dll
 D:\VIA\DNP1\DNP31\DNP3\WebAPI\bin\Debug\net6.0\Application.pdb
 D:\VIA\DNP1\DNP31\DNP3\WebAPI\bin\Debug\net6.0\FileData.pdb
 D:\VIA\DNP1\DNP31\DNP3\WebAPI\bin\Debug\net6.0\Domain.pdb
+D:\VIA\DNP1\DNP31\DNP3\WebAPI\bin\Debug\net6.0\data.json
