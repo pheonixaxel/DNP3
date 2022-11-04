@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\FileData\\FileData.csproj": {}
+    "D:\\VIA\\DNP1\\DNP31\\DNP3\\FileData\\FileData.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\Application\\Application.csproj": {
+    "D:\\VIA\\DNP1\\DNP31\\DNP3\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\VIA\\DNP1\\DNP31\\DNP3\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\bhup0\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\Application\\obj\\",
+        "projectPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\alexc\\.nuget\\packages\\",
+        "outputPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bhup0\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\alexc\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\Domain\\Domain.csproj"
+              "D:\\VIA\\DNP1\\DNP31\\DNP3\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\Domain\\Domain.csproj"
               }
             }
           }
@@ -57,21 +57,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\bhup0\\.dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\Domain\\Domain.csproj": {
+    "D:\\VIA\\DNP1\\DNP31\\DNP3\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\VIA\\DNP1\\DNP31\\DNP3\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\bhup0\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\Domain\\obj\\",
+        "projectPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\alexc\\.nuget\\packages\\",
+        "outputPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bhup0\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\alexc\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -110,21 +110,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\bhup0\\.dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\FileData\\FileData.csproj": {
+    "D:\\VIA\\DNP1\\DNP31\\DNP3\\FileData\\FileData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\FileData\\FileData.csproj",
+        "projectUniqueName": "D:\\VIA\\DNP1\\DNP31\\DNP3\\FileData\\FileData.csproj",
         "projectName": "FileData",
-        "projectPath": "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\FileData\\FileData.csproj",
-        "packagesPath": "C:\\Users\\bhup0\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\FileData\\obj\\",
+        "projectPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\FileData\\FileData.csproj",
+        "packagesPath": "C:\\Users\\alexc\\.nuget\\packages\\",
+        "outputPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\FileData\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bhup0\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\alexc\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -136,8 +136,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\Application\\Application.csproj"
+              "D:\\VIA\\DNP1\\DNP31\\DNP3\\Application\\Application.csproj": {
+                "projectPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\Application\\Application.csproj"
               }
             }
           }
@@ -167,7 +167,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\bhup0\\.dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

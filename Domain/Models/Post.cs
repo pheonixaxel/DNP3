@@ -8,4 +8,11 @@ public class Post
     public DateTime Created { get; set; }
     public DateTime? Updated { get; set; }
     public User OwnerId { get; set; }
+
+    public Post(string title, string content, User ownerId)
+    {
+        Title = title;
+        Content = content;
+        OwnerId = ownerId;
+    }
 }

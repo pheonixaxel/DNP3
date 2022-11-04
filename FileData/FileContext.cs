@@ -58,7 +58,11 @@ public class FileContext
     
     public void SaveChanges()
     {
-        string content = JsonSerializer.Serialize(dataContainer);
+        string content = JsonSerializer.Serialize(dataContainer, new JsonSerializerOptions()
+        {
+            WriteIndented = true
+        });
+
         File.WriteAllText(filePath, content);
         dataContainer = null;
     }

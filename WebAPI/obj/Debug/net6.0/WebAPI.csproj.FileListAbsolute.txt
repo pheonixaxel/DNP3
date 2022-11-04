@@ -31,7 +31,6 @@ D:\VIA\DNP1\DNP31\DNP3\WebAPI\bin\Debug\net6.0\FileData.dll
 D:\VIA\DNP1\DNP31\DNP3\WebAPI\bin\Debug\net6.0\Application.pdb
 D:\VIA\DNP1\DNP31\DNP3\WebAPI\bin\Debug\net6.0\FileData.pdb
 D:\VIA\DNP1\DNP31\DNP3\WebAPI\bin\Debug\net6.0\Domain.pdb
-D:\VIA\DNP1\DNP31\DNP3\WebAPI\bin\Debug\net6.0\data.json
 C:\Users\bhup0\Documents\GitHub\DNP3\WebAPI\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\bhup0\Documents\GitHub\DNP3\WebAPI\bin\Debug\net6.0\appsettings.json
 C:\Users\bhup0\Documents\GitHub\DNP3\WebAPI\bin\Debug\net6.0\WebAPI.exe
@@ -65,3 +64,4 @@ C:\Users\bhup0\Documents\GitHub\DNP3\WebAPI\obj\Debug\net6.0\refint\WebAPI.dll
 C:\Users\bhup0\Documents\GitHub\DNP3\WebAPI\obj\Debug\net6.0\WebAPI.pdb
 C:\Users\bhup0\Documents\GitHub\DNP3\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
 C:\Users\bhup0\Documents\GitHub\DNP3\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
+D:\VIA\DNP1\DNP31\DNP3\WebAPI\bin\Debug\net6.0\data.json

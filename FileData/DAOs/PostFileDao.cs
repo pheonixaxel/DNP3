@@ -15,11 +15,11 @@ public class PostFileDao : IPostDao
     }
     public Task<Post> CreateAsync(Post post)
     {
-        int id = 0;
+        int id = 1;
         if (context.Posts.Any())
         {
-            int max = context.Posts.Max(p => p.Id);
-            id = max + 1;
+            id = context.Posts.Max(p => p.Id);
+            id++;
         }
 
         post.Id = id;

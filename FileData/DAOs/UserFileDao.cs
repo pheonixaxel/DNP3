@@ -45,7 +45,7 @@ public class UserFileDao : IUserDao
 
     public Task<User?> GetByIdAsync(int id)
     {
-        throw new NotImplementedException();
+        return Task.FromResult(context.Users.FirstOrDefault(u => u.Id == id));
     }
 
     public Task DeleteAsync(int id)
