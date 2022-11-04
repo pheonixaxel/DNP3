@@ -1,0 +1,14 @@
+﻿@page "/"
+@namespace Blazor.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "_Layout";
+}
+
+
+<head>
+
+<link href="css/NewStyles.css" rel="stylesheet"/>
+    </head>
+
+<component type="typeof(App)" render-mode="ServerPrerendered"/>
