@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Andi\\.nuget\\packages\\": {}
+    "C:\\Users\\bhup0\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andi\\IdeaProjects\\DNP3\\Blazor\\Blazor.csproj",
+      "projectUniqueName": "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\Blazor\\Blazor.csproj",
       "projectName": "Blazor",
-      "projectPath": "C:\\Users\\Andi\\IdeaProjects\\DNP3\\Blazor\\Blazor.csproj",
-      "packagesPath": "C:\\Users\\Andi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andi\\IdeaProjects\\DNP3\\Blazor\\obj\\",
+      "projectPath": "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\Blazor\\Blazor.csproj",
+      "packagesPath": "C:\\Users\\bhup0\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bhup0\\Documents\\GitHub\\DNP3\\Blazor\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Andi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\bhup0\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -62,7 +62,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Andi\\.dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\bhup0\\.dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
