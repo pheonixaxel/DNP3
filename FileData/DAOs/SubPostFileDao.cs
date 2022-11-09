@@ -1,13 +1,14 @@
-﻿using Domain;
+﻿using Application.DaoInterfaces;
+using Domain;
 using FileData;
 using Shared.Models;
 
 namespace FileData.DAOs {
-    public class SubPostDao : ISubPostDao {
+    public class SubPostFileDao : ISubPostDao {
 
         private readonly FileContext _context;
 
-        public SubPostDao(FileContext context)
+        public SubPostFileDao(FileContext context)
         {
             _context = context;
         }

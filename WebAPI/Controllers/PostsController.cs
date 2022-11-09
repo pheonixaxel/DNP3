@@ -13,6 +13,7 @@ namespace WebAPI.Controllers;
 public class PostsController : ControllerBase
 {
     private readonly IPostLogic postLogic;
+    private readonly PostCreationDto pcdto;
 
     public PostsController(IPostLogic postLogic)
     {
@@ -20,7 +21,7 @@ public class PostsController : ControllerBase
     }
     
     [HttpPost]
-    public async Task<ActionResult<Post>> CreateAsync([FromBody]PostCreationDto postCreationDto)
+    public async Task<ActionResult<Post>> CreateAsync(PostCreationDto postCreationDto)
     {
         try
         {
@@ -33,6 +34,7 @@ public class PostsController : ControllerBase
             return StatusCode(500, e.Message);
         } 
     }
+    
     
     [HttpGet]
     [Route("/Post/")]
@@ -50,23 +52,6 @@ public class PostsController : ControllerBase
             return StatusCode(500, e.Message);
         }
     }
-
-    
-    /*[HttpGet]
-    public async Task<ActionResult<IEnumerable<Post>>> GetAsync([FromQuery] string? subPost)
-    {
-        try
-        {
-            IEnumerable<Post> posts = await postLogic.GetAsync(subPost);
-            return Ok(posts);
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            return StatusCode(500, e.Message);
-        }
-    }
-    
     
 
     [HttpDelete]
@@ -82,7 +67,6 @@ public class PostsController : ControllerBase
             Console.WriteLine(e);
             return StatusCode(500, e.Message);
         }
-    
-    }*/
+    }
 
 }

@@ -1,7 +1,10 @@
-﻿using Shared.DTOs;
+﻿using Shared.Models;
+using Shared.DTOs;
+
+
 using Shared.Models;
 
-namespace Application.LogicInterfaces;
+namespace Application.Logic;
 
 public interface IPostLogic
 {

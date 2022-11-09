@@ -3,6 +3,7 @@ using Application.LogicInterfaces;
 using Shared.DTOs;
 using Shared.Models;
 
+
 namespace Application.Logic;
 
 public class PostLogic : IPostLogic
@@ -31,7 +32,22 @@ public class PostLogic : IPostLogic
             Content = postToCreate.Content,
             OwnerId = user
         };
-        Post created = await postDao.CreateAsync(post, SubPostCreationDto.id);
+        Post created = await postDao.CreateAsync(post);
         return created;
+    }
+
+    public Task<IEnumerable<Post>> GetAsync(string? subPost)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<Post?> GetByIdAsync(int id)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task DeleteAsync(int id)
+    {
+        throw new NotImplementedException();
     }
 }
