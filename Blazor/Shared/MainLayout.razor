@@ -12,7 +12,7 @@
 	<main>
 		<div class="top-row px-4">
 			
-			 <div style="width:70px;text-align:right;">
+			<div style="width:70px;text-align:right;">
 				@if (loggedIn)
 				{
 					<a class="btn btn-sm btn-primary text-white" title="Account" href="account"><span class="oi oi-key"></span></a>
@@ -21,6 +21,7 @@
 				else
 				{
 					<button class="btn btn-sm btn-success" title="Login" @onclick="OpenLogin"><span class="oi oi-account-login"></span></button>
+					<button class="btn btn-sm btn-primary" title="Register" @onclick="OpenRegister"><span class="oi oi-person"></span></button>
 				}
 			</div> 
 		</div>
@@ -99,6 +100,13 @@
 			loggedIn = true;
 			
 		}
+	}
+	
+	private async Task OpenRegister()
+	{
+		display = true;
+		await Task.Delay(100);
+		show = true;
 	}
 
 	protected override async Task OnInitializedAsync()

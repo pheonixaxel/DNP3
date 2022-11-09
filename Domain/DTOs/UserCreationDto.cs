@@ -6,15 +6,14 @@ namespace Shared.DTOs;
 
 public class UserCreationDto
 {
-    public string UserName { get;}
-    public string Password { get;}
-    
-    public int Id { get; set; }
+    public string UserName { get; init; }
+    public string Password { get; init; }
 
     public UserCreationDto(string userName, string password)
     {
         UserName = userName;
-        Password = password;
+       Password = password;
     }
-
+    
+    
 }
