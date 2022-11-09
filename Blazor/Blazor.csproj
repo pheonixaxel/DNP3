@@ -19,7 +19,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="wwwroot\img" />
+      <None Update="Pages\loginbuttons.razor.css">
+        <DependentUpon>LoginButtons.razor</DependentUpon>
+      </None>
     </ItemGroup>
 
 </Project>

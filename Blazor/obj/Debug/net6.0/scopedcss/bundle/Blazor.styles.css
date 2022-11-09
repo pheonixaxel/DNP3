@@ -32,6 +32,11 @@
     transform: scale(1.1);
     box-shadow: 0 2px 10px 2px #3f3f3f;
 }
+/* _content/Blazor/Pages/loginbuttons.razor.rz.scp.css */
+.icon[b-8pweul6p7d] {
+    width: 30px;
+    cursor: pointer;
+}
 /* _content/Blazor/Shared/MainLayout.razor.rz.scp.css */
 .page[b-r0yqwuvdyg] {
     position: relative;

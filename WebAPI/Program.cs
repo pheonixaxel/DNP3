@@ -38,8 +38,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
 });
 
 
-AuthorizationPolicies.AddPolicies(builder.Services);
-
 builder.Services.AddScoped<IAuthService, AuthService>();
 
 var app = builder.Build();

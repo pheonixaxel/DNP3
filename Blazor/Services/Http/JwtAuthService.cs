@@ -3,18 +3,20 @@ using System.Text;
 using System.Text.Json;
 using Shared.DTOs;
 using Shared.Models;
-using WebAPI.Services;
 
 namespace Blazor.Services.Http;
 
 public class JwtAuthService : IAuthService
 
 {
-    private readonly HttpClient client = new ();
+    private readonly HttpClient client = new();
 
     // this private variable for simple caching
     public static string? Jwt { get; private set; } = "";
-    
+
+    public Action<ClaimsPrincipal> OnAuthStateChanged { get; set; } = null!;
+
+
     private static IEnumerable<Claim> ParseClaimsFromJwt(string jwt)
     {
         string payload = jwt.Split('.')[1];
@@ -37,7 +39,7 @@ public class JwtAuthService : IAuthService
 
         return Convert.FromBase64String(base64);
     }
-    
+
     private static ClaimsPrincipal CreateClaimsPrincipal()
     {
         if (string.IsNullOrEmpty(Jwt))
@@ -46,41 +48,27 @@ public class JwtAuthService : IAuthService
         }
 
         IEnumerable<Claim> claims = ParseClaimsFromJwt(Jwt);
-    
+
         ClaimsIdentity identity = new(claims, "jwt");
 
         ClaimsPrincipal principal = new(identity);
         return principal;
     }
 
-    public Task<User> GetUser(string username, string password)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task<User> ValidateUser(string username, string password)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task RegisterUser(User user)
-    {
-        throw new NotImplementedException();
-    }
-
     public async Task LoginAsync(string username, string password)
     {
-        UserCreationDto userCreationDto = new(username, password)
+        UserCreationDto userLoginDto = new(username, password)
         {
             UserName = username,
             Password = password
         };
 
-        string userAsJson = JsonSerializer.Serialize(userCreationDto);
+        string userAsJson = JsonSerializer.Serialize(userLoginDto);
         StringContent content = new(userAsJson, Encoding.UTF8, "application/json");
 
-        HttpResponseMessage response = await client.PostAsync("https://localhost:7111/auth/login", content);
+        HttpResponseMessage response = await client.PostAsync("https://localhost:7055/auth/login", content);
         string responseContent = await response.Content.ReadAsStringAsync();
+        Console.WriteLine(responseContent);
 
         if (!response.IsSuccessStatusCode)
         {
@@ -95,20 +83,31 @@ public class JwtAuthService : IAuthService
         OnAuthStateChanged.Invoke(principal);
     }
 
+
     public Task LogoutAsync()
     {
-        throw new NotImplementedException();
+        Jwt = null;
+        ClaimsPrincipal principal = new();
+        OnAuthStateChanged.Invoke(principal);
+        return Task.CompletedTask;
     }
 
-    public Task RegisterAsync(User user)
+    public async Task RegisterAsync(User user)
     {
-        throw new NotImplementedException();
+        string userAsJson = JsonSerializer.Serialize(user);
+        StringContent content = new(userAsJson, Encoding.UTF8, "application/json");
+        HttpResponseMessage response = await client.PostAsync("http://localhost:7055/auth/register", content);
+        string responseContent = await response.Content.ReadAsStringAsync();
+
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(responseContent);
+        }
     }
 
     public Task<ClaimsPrincipal> GetAuthAsync()
     {
-        throw new NotImplementedException();
+        ClaimsPrincipal principal = CreateClaimsPrincipal();
+        return Task.FromResult(principal);
     }
-
-    public Action<ClaimsPrincipal> OnAuthStateChanged { get; set; } = null!;
 }

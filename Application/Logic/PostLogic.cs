@@ -25,7 +25,7 @@ public class PostLogic : IPostLogic
         {
             throw new ArgumentException("User does not exist");
         }
-        
+
         Post post = new Post
         {
             Title = postToCreate.Title,
