@@ -11,58 +11,27 @@ public class PostLogic : IPostLogic
     private readonly IPostDao postDao;
     private readonly IUserDao.IUserDao userDao;
 
-    public PostLogic(IPostDao postDao , IUserDao.IUserDao userDao)
+    public PostLogic(IPostDao postDao, IUserDao.IUserDao userDao)
     {
         this.postDao = postDao;
         this.userDao = userDao;
     }
-    private void ValidatePost(PostCreationDto post)
-    {
-        if (post == null)
-        {
-            throw new ArgumentNullException(nameof(post));
-        }
-        if (post.Content == null)
-        {
-            throw new ArgumentNullException(nameof(post.Content));
-        }
-        if (post.Content.Length > 1000)
-        {
-            throw new ArgumentException("Post content is too long");
-        }
-    }
 
-    public async Task<Post> CreateAsync(PostCreationDto postCreationDto)
+    public async Task<Post> CreateAsync(PostCreationDto postToCreate)
     {
-        User? user = await userDao.GetByIdAsync(postCreationDto.OwnerId);
+        User? user = await userDao.GetByIdAsync(postToCreate.OwnerId);
         if (user == null)
         {
-            throw new Exception($"User with id {postCreationDto.OwnerId} does not exist");
+            throw new ArgumentException("User does not exist");
         }
         
-        ValidatePost(postCreationDto);
-        Post post = new Post(postCreationDto.Title, postCreationDto.Content, user);
-        Post created = await postDao.CreateAsync(post);
-
+        Post post = new Post
+        {
+            Title = postToCreate.Title,
+            Content = postToCreate.Content,
+            OwnerId = user
+        };
+        Post created = await postDao.CreateAsync(post, SubPostCreationDto.id);
         return created;
     }
-    
-    public Task<Post?> GetByIdAsync(int id)
-    {
-        return postDao.GetByIdAsync(id);
-    }
-    /*public Task<IEnumerable<Post>> GetCommentsAsync(Post parentPost)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task<IEnumerable<Post>> GetAsync(string? subForm)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task DeleteAsync(int id)
-    {
-        throw new NotImplementedException();
-    }*/
 }
