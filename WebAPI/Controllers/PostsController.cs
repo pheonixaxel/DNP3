@@ -13,6 +13,7 @@ namespace WebAPI.Controllers;
 public class PostsController : ControllerBase
 {
     private readonly IPostLogic postLogic;
+    private readonly PostCreationDto pcdto;
 
     public PostsController(IPostLogic postLogic)
     {
@@ -34,20 +35,6 @@ public class PostsController : ControllerBase
         } 
     }
     
-    [HttpGet]
-    public async Task<ActionResult<IEnumerable<Post>>> GetAsync([FromQuery] string? subPost)
-    {
-        try
-        {
-            IEnumerable<Post> posts = await postLogic.GetAsync(subPost);
-            return Ok(posts);
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            return StatusCode(500, e.Message);
-        }
-    }
     
     [HttpGet]
     [Route("/Post/")]
