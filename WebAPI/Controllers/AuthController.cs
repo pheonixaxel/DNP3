@@ -15,9 +15,9 @@ namespace WebAPI.Controllers;
 public class AuthController : ControllerBase
 {
     private readonly IConfiguration config;
-    private readonly AuthService authService;
+    private readonly IAuthService authService;
 
-    public AuthController(IConfiguration config, AuthService authService)
+    public AuthController(IConfiguration config, IAuthService authService)
     {
         this.config = config;
         this.authService = authService;
@@ -74,5 +74,4 @@ public class AuthController : ControllerBase
         }
     }
     
-
 }

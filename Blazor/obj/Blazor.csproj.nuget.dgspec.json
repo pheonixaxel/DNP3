@@ -1,20 +1,149 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andi\\IdeaProjects\\DNP3\\Blazor\\Blazor.csproj": {}
+    "D:\\VIA\\DNP1\\DNP31\\DNP3\\Blazor\\Blazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andi\\IdeaProjects\\DNP3\\Blazor\\Blazor.csproj": {
+    "D:\\VIA\\DNP1\\DNP31\\DNP3\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andi\\IdeaProjects\\DNP3\\Blazor\\Blazor.csproj",
-        "projectName": "Blazor",
-        "projectPath": "C:\\Users\\Andi\\IdeaProjects\\DNP3\\Blazor\\Blazor.csproj",
-        "packagesPath": "C:\\Users\\Andi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andi\\IdeaProjects\\DNP3\\Blazor\\obj\\",
+        "projectUniqueName": "D:\\VIA\\DNP1\\DNP31\\DNP3\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\alexc\\.nuget\\packages\\",
+        "outputPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Andi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\alexc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\VIA\\DNP1\\DNP31\\DNP3\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\VIA\\DNP1\\DNP31\\DNP3\\Blazor\\Blazor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\VIA\\DNP1\\DNP31\\DNP3\\Blazor\\Blazor.csproj",
+        "projectName": "Blazor",
+        "projectPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\Blazor\\Blazor.csproj",
+        "packagesPath": "C:\\Users\\alexc\\.nuget\\packages\\",
+        "outputPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\Blazor\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alexc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\VIA\\DNP1\\DNP31\\DNP3\\WebAPI\\WebAPI.csproj": {
+                "projectPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\WebAPI\\WebAPI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\VIA\\DNP1\\DNP31\\DNP3\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\VIA\\DNP1\\DNP31\\DNP3\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\alexc\\.nuget\\packages\\",
+        "outputPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alexc\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -55,6 +184,137 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\VIA\\DNP1\\DNP31\\DNP3\\FileData\\FileData.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\VIA\\DNP1\\DNP31\\DNP3\\FileData\\FileData.csproj",
+        "projectName": "FileData",
+        "projectPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\FileData\\FileData.csproj",
+        "packagesPath": "C:\\Users\\alexc\\.nuget\\packages\\",
+        "outputPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\FileData\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alexc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\VIA\\DNP1\\DNP31\\DNP3\\Application\\Application.csproj": {
+                "projectPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\Application\\Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\VIA\\DNP1\\DNP31\\DNP3\\WebAPI\\WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\VIA\\DNP1\\DNP31\\DNP3\\WebAPI\\WebAPI.csproj",
+        "projectName": "WebAPI",
+        "projectPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\WebAPI\\WebAPI.csproj",
+        "packagesPath": "C:\\Users\\alexc\\.nuget\\packages\\",
+        "outputPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\WebAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alexc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\VIA\\DNP1\\DNP31\\DNP3\\Application\\Application.csproj": {
+                "projectPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\Application\\Application.csproj"
+              },
+              "D:\\VIA\\DNP1\\DNP31\\DNP3\\FileData\\FileData.csproj": {
+                "projectPath": "D:\\VIA\\DNP1\\DNP31\\DNP3\\FileData\\FileData.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.0-rc.2.21480.10, )"
+            },
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
@@ -62,7 +322,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

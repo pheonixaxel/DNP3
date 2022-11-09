@@ -14,4 +14,12 @@
       <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="7.0.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\WebAPI\WebAPI.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\img" />
+    </ItemGroup>
+
 </Project>

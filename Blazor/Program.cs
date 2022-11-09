@@ -2,6 +2,8 @@ using System.Text;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Blazor.Data;
+using Blazor.Services.Http;
+using WebAPI.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,8 +11,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddSingleton<WeatherForecastService>();
 
+builder.Services.AddScoped<IAuthService, JwtAuthService>();
 
 var app = builder.Build();
 

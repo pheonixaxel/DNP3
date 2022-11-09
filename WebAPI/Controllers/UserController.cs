@@ -31,12 +31,14 @@ public class UsersController : ControllerBase
         }
     }
 
+// come back to this
+
     [HttpGet]
-    public async Task<ActionResult<User>> GetByIdAsync(UserCreationDto dto)
+    public async Task<ActionResult<User>> GetByIdAsync(User userId)
     {
             try
         {
-            User user = await userLogic.GetByIdAsync(dto.Id);
+            User user = await userLogic.GetByIdAsync(userId.Id);
             return Ok(user);
         }
         catch (Exception e)
