@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "n+dLBqRXRIsgmHbJk91DwajXBTxu7/7QU2ZAR8QujFxlrd2n+bNjadyH/sjki93gNojdnAqLsFSPREQsutMEgw==",
+  "dgSpecHash": "VaTa8/VmKRryQAOrRONtS6nm+XjZbTHaWU2058OjNfH5QGAHCYe9o7DNvK410hftcdWDdQzWDFz+Dk13+WCB0Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Andi\\IdeaProjects\\DNP3\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Andi\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.0\\microsoft.aspnetcore.authorization.7.0.0.nupkg.sha512",
+    "C:\\Users\\Andi\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.0\\microsoft.aspnetcore.metadata.7.0.0.nupkg.sha512",
+    "C:\\Users\\Andi\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Andi\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Andi\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\Andi\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\Andi\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
