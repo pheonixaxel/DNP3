@@ -8,34 +8,22 @@ using Shared.Models;
 namespace WebAPI.Services;
 
 public class AuthService : IAuthService
-    {
+{
 
-        private readonly IList<User> users = new List<User>
-        {
-            new User
-            {
-                Id = 36,
-                Email = "trmo@via.dk",
-                UserName = "trmo",
-                Password = "1234"
-                
-            },
-            new User
-            {
-                Id = 35,
-                Email = "username@gmail.com",
-                UserName = "username",
-                Password = "password"
-            }
-        };
-        
+    private IList<User> users = new List<User>();
+
+
+
         private readonly HttpClient client = new ();
 
         public Task<User> ValidateUser(string username, string password)
         {
+            
+            string json = File .ReadAllText("RegisteredUsers");
+            users = JsonSerializer.Deserialize<List<User>>(json);
             User? existingUser = users.FirstOrDefault(u => 
                 u.UserName.Equals(username, StringComparison.OrdinalIgnoreCase));
-        
+
             if (existingUser == null)
             {
                 throw new Exception("User not found");
@@ -71,6 +59,7 @@ public class AuthService : IAuthService
             // save to persistence instead of list
         
             users.Add(user);
+            
              
             return Task.CompletedTask;
         }
@@ -106,6 +95,7 @@ public class AuthService : IAuthService
                 UserName = username,
                 Password = password
             };
+            
 
             string userAsJson = JsonSerializer.Serialize(userCreationDto);
             StringContent content = new(userAsJson, Encoding.UTF8, "application/json");
@@ -145,10 +135,28 @@ public class AuthService : IAuthService
         {
             throw new NotImplementedException();
         }
+        
 
-        public Task RegisterAsync(User user)
+        public async Task RegisterAsync(User user)
         {
-            throw new NotImplementedException();
+            User user1 = user;
+            string userAsJson = JsonSerializer.Serialize(user1);
+            StringContent content = new(userAsJson, Encoding.UTF8, "application/json");
+
+            HttpResponseMessage response = await client.PostAsync("http://localhost:7111/register", content);
+            string responseContent = await response.Content.ReadAsStringAsync();
+
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception(responseContent);
+            }
+
+            string token = responseContent;
+            Jwt = token;
+
+            ClaimsPrincipal principal = CreateClaimsPrincipal();
+
+            OnAuthStateChanged.Invoke(principal);
         }
 
         public Task<ClaimsPrincipal> GetAuthAsync()

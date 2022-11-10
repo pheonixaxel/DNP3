@@ -1,6 +1,7 @@
 ﻿using System.Security.Claims;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using Shared.DTOs;
 using Shared.Models;
 
@@ -10,7 +11,11 @@ public class JwtAuthService : IAuthService
 
 {
     private readonly HttpClient client = new();
-
+    
+ 
+    private static readonly JsonSerializerOptions _options = 
+        new() { DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull };
+    
     // this private variable for simple caching
     public static string? Jwt { get; private set; } = "";
 
@@ -91,13 +96,25 @@ public class JwtAuthService : IAuthService
         OnAuthStateChanged.Invoke(principal);
         return Task.CompletedTask;
     }
+    
+    public static void SimpleWrite(object obj, string fileName)
+    {
+        var jsonString = JsonSerializer.Serialize(obj, _options);
+        File.WriteAllText(fileName, jsonString);
+    }
 
     public async Task RegisterAsync(User user)
     {
+        
+        
         string userAsJson = JsonSerializer.Serialize(user);
+        client.DefaultRequestHeaders.ConnectionClose = true;
         StringContent content = new(userAsJson, Encoding.UTF8, "application/json");
-        HttpResponseMessage response = await client.PostAsync("http://localhost:7055/auth/register", content);
+        HttpResponseMessage response = await client.PostAsync("http://localhost:7055/auth/Register", content);
         string responseContent = await response.Content.ReadAsStringAsync();
+        SimpleWrite(user,"RegisteredUsers.json");
+        
+        
 
         if (!response.IsSuccessStatusCode)
         {

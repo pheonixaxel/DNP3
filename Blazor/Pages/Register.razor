@@ -1,4 +1,5 @@
-﻿@page "/Login"
+﻿@page "/Register"
+<h3>Welcome, New User!</h3>
 @using Blazor.Services
 @using global::Shared.Models
 @inject IAuthService authService
@@ -7,13 +8,13 @@
 <AuthorizeView>
     <NotAuthorized>
         <div class="card">
-            <h3>Please login</h3>
+            <h3>Register</h3>
             <div class="field">
-                <label>User name:</label>
+                <label ><span class =" oi oi-person"> Username: </span></label>
                 <input type="text" @bind="userName"/>
             </div>
             <div class="field">
-                <label style="text-align: center">Password:</label>
+                <label style="text-align: center ; padding: 4px"><span class =" oi oi-lock-locked"> Password: </span></label>
                 <input type="password" @bind="password"/>
             </div>
             @if (!string.IsNullOrEmpty(errorLabel))
@@ -24,9 +25,7 @@
                     </label>
                 </div>
             }
-            <div class="field">
-                <button class="loginbtn" @onclick="LoginAsync">Log in</button>
-            </div>
+           
         <div class="field">
             <button class="loginbtn" title="Register" @onclick="RegisterAsync" >Register <span class="oi oi-key"></span></button>
         </div>
@@ -39,32 +38,28 @@
     </Authorized>
 </AuthorizeView>
 
+
+
+
 @code {
     private string userName;
     private string password;
     private string errorLabel;
     private User user;
 
-    private async Task LoginAsync()
-    {
-        errorLabel = "";
-        try
-        {
-            await authService.LoginAsync(userName, password);
-            navMgr.NavigateTo("/");
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            errorLabel = $"Error: {e.Message}";
-        }
-    }
     
     private async Task RegisterAsync()
     {
         errorLabel = "";
         try
         {
+            user = new User
+            {
+                UserName = userName,
+                Password = password
+            };
+            Console.WriteLine(user.UserName);
+            await authService.RegisterAsync(user);
             navMgr.NavigateTo("/Register");
         }
         catch (Exception e)

@@ -157,3 +157,16 @@ C:\Users\tothi\OneDrive\Documents\GitHub\DNP3\WebAPI\obj\Debug\net6.0\refint\Web
 C:\Users\tothi\OneDrive\Documents\GitHub\DNP3\WebAPI\obj\Debug\net6.0\WebAPI.pdb
 C:\Users\tothi\OneDrive\Documents\GitHub\DNP3\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
 C:\Users\tothi\OneDrive\Documents\GitHub\DNP3\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
+C:\Users\Andi\IdeaProjects\DNP3\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Andi\IdeaProjects\DNP3\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Andi\IdeaProjects\DNP3\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Andi\IdeaProjects\DNP3\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Andi\IdeaProjects\DNP3\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Andi\IdeaProjects\DNP3\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Andi\IdeaProjects\DNP3\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Andi\IdeaProjects\DNP3\WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Andi\IdeaProjects\DNP3\WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Andi\IdeaProjects\DNP3\WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Andi\IdeaProjects\DNP3\WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Andi\IdeaProjects\DNP3\WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Andi\IdeaProjects\DNP3\WebAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

@@ -58,6 +58,7 @@ public class AuthController : ControllerBase
         string serializedToken = new JwtSecurityTokenHandler().WriteToken(token);
         return serializedToken;
     }
+
     [HttpPost, Route("login")]
     public async Task<ActionResult> Login([FromBody] UserCreationDto userLoginDto)
     {
@@ -65,7 +66,7 @@ public class AuthController : ControllerBase
         {
             User user = await authService.ValidateUser(userLoginDto.UserName, userLoginDto.Password);
             string token = GenerateJwt(user);
-    
+
             return Ok(token);
         }
         catch (Exception e)
@@ -73,5 +74,12 @@ public class AuthController : ControllerBase
             return BadRequest(e.Message);
         }
     }
+
+    [HttpPost, Route("Register")]
+        public async Task<ActionResult> Register([FromBody] User user)
+        {
+           await authService.RegisterUser(user);
+           return Ok();
+        }
     
 }
