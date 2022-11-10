@@ -1,5 +1,6 @@
 ﻿@page "/Login"
 @using Blazor.Services
+@using Microsoft.AspNetCore.Components
 @inject IAuthService authService
 @inject NavigationManager navMgr
 
@@ -42,7 +43,7 @@
 
     private async Task LoginAsync()
     {
-        errorLabel = "";
+        errorLabel = "";    
         try
         {
             await authService.LoginAsync(userName, password);

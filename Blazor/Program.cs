@@ -5,6 +5,8 @@ using Blazor.Data;
 using Blazor.Services.Http;
 using Blazor.Services;
 using Blazor.Auth;
+using HttpClients.ClientInterfaces;
+using HttpClients.Implementations;
 using Microsoft.AspNetCore.Components.Authorization;
 
 
@@ -18,6 +20,8 @@ builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthProvider>();
 builder.Services.AddScoped(sp => new HttpClient());
 builder.Services.AddScoped<IAuthService, JwtAuthService>();
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<IPostService, PostHttpClient>();
+
 
 var app = builder.Build();
 

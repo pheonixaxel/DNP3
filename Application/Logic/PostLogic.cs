@@ -41,9 +41,9 @@ public class PostLogic : IPostLogic
         throw new NotImplementedException();
     }
 
-    public Task<Post?> GetByIdAsync(int id)
+    public async Task<Post?> GetByIdAsync(int id)
     {
-        throw new NotImplementedException();
+        return await postDao.GetByIdAsync(id);
     }
 
     public Task DeleteAsync(int id)
