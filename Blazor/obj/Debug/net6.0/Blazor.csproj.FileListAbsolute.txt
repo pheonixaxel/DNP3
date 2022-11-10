@@ -206,3 +206,6 @@ C:\Users\Andi\IdeaProjects\DNP3\Blazor\obj\Debug\net6.0\Blazor.MvcApplicationPar
 C:\Users\Andi\IdeaProjects\DNP3\Blazor\obj\Debug\net6.0\scopedcss\Pages\Login.razor.rz.scp.css
 C:\Users\Andi\IdeaProjects\DNP3\Blazor\obj\Debug\net6.0\scopedcss\Pages\loginbuttons.razor.rz.scp.css
 C:\Users\Andi\IdeaProjects\DNP3\Blazor\obj\Debug\net6.0\Blazor.csproj.CopyComplete
+C:\Users\tothi\OneDrive\Documents\GitHub\DNP3\Blazor\bin\Debug\net6.0\HttpClients.dll
+C:\Users\tothi\OneDrive\Documents\GitHub\DNP3\Blazor\bin\Debug\net6.0\HttpClients.pdb
+C:\Users\tothi\OneDrive\Documents\GitHub\DNP3\Blazor\bin\Debug\net6.0\data.json

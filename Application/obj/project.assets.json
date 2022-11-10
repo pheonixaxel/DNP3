@@ -339,19 +339,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Andi\\.nuget\\packages\\": {}
+    "C:\\Users\\tothi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andi\\IdeaProjects\\DNP3\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\Andi\\IdeaProjects\\DNP3\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\Andi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andi\\IdeaProjects\\DNP3\\Application\\obj\\",
+      "projectPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\tothi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Andi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\tothi\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -363,8 +363,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Andi\\IdeaProjects\\DNP3\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Andi\\IdeaProjects\\DNP3\\Domain\\Domain.csproj"
+            "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Domain\\Domain.csproj"
             }
           }
         }
@@ -400,7 +400,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

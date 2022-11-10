@@ -1,0 +1,19 @@
+{
+  "Users": [
+    {
+      "Id": 1,
+      "UserName": "aws",
+      "Password": "swa"
+    },
+    {
+      "Id": 2,
+      "UserName": "andreiodoreu",
+      "Password": "1234"
+    },
+    {
+      "Id": 3,
+      "UserName": "1234556",
+      "Password": "123"
+    }
+  ]
+}

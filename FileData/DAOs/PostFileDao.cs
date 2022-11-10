@@ -25,7 +25,7 @@ public class PostFileDao : IPostDao
         post.Id = id;
         
         context.Posts.Add(post);
-        context.SaveChanges();
+        context.SaveChangesPost();
 
         return Task.FromResult(post);
     }
@@ -59,7 +59,7 @@ public class PostFileDao : IPostDao
             if (post.Id == id)
             {
                 context.Posts.Remove(post);
-                context.SaveChanges();
+                context.SaveChangesPost();
                 break;
             }
         }
@@ -75,7 +75,7 @@ public class PostFileDao : IPostDao
             {
                 context.Posts.Remove(post);
                 context.Posts.Add(updated);
-                context.SaveChanges();
+                context.SaveChangesPost();
                 break;
             }
         }

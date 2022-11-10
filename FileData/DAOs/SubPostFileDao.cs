@@ -1,4 +1,4 @@
-﻿using Application.DaoInterfaces;
+﻿/*using Application.DaoInterfaces;
 using Domain;
 using FileData;
 using Shared.Models;
@@ -37,4 +37,4 @@ namespace FileData.DAOs {
             return Task.FromResult(posts);
         }
     }
-}
+}*/

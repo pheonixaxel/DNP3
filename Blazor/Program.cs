@@ -5,8 +5,9 @@ using Blazor.Data;
 using Blazor.Services.Http;
 using Blazor.Services;
 using Blazor.Auth;
+using HttpClients.ClientImpls;
+using HttpClients.ClientInterfaces;
 using Microsoft.AspNetCore.Components.Authorization;
-
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,7 +19,13 @@ builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthProvider>();
 builder.Services.AddScoped(sp => new HttpClient());
 builder.Services.AddScoped<IAuthService, JwtAuthService>();
 builder.Services.AddHttpContextAccessor();
-
+builder.Services.AddScoped(
+    sp =>
+        new HttpClient
+        {
+            BaseAddress = new Uri("https://localhost:7055")
+        });
+builder.Services.AddScoped<IUserService, UserHttpClient>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -97,12 +97,6 @@ public class JwtAuthService : IAuthService
         return Task.CompletedTask;
     }
     
-    public static void SimpleWrite(object obj, string fileName)
-    {
-        var jsonString = JsonSerializer.Serialize(obj, _options);
-        File.WriteAllText(fileName, jsonString);
-    }
-
     public async Task RegisterAsync(User user)
     {
         
@@ -112,7 +106,7 @@ public class JwtAuthService : IAuthService
         StringContent content = new(userAsJson, Encoding.UTF8, "application/json");
         HttpResponseMessage response = await client.PostAsync("http://localhost:7055/auth/Register", content);
         string responseContent = await response.Content.ReadAsStringAsync();
-        SimpleWrite(user,"RegisteredUsers.json");
+
         
         
 

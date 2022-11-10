@@ -2,6 +2,7 @@
 using System.Security.Claims;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using Shared.DTOs;
 using Shared.Models;
 
@@ -10,7 +11,7 @@ namespace WebAPI.Services;
 public class AuthService : IAuthService
 {
 
-    private IList<User> users = new List<User>();
+    /*private IList<User> users = new List<User>();*/
 
 
 
@@ -19,10 +20,10 @@ public class AuthService : IAuthService
         public Task<User> ValidateUser(string username, string password)
         {
             
-            string json = File .ReadAllText("RegisteredUsers");
-            users = JsonSerializer.Deserialize<List<User>>(json);
-            User? existingUser = users.FirstOrDefault(u => 
-                u.UserName.Equals(username, StringComparison.OrdinalIgnoreCase));
+            string json = File .ReadAllText("data.json");
+            Root users = JsonSerializer.Deserialize<Root>(json);
+            
+            User existingUser = users.Users.FirstOrDefault(u => u.UserName == username && u.Password == password);
 
             if (existingUser == null)
             {
@@ -58,7 +59,7 @@ public class AuthService : IAuthService
         
             // save to persistence instead of list
         
-            users.Add(user);
+            /*users.Add(user);*/
             
              
             return Task.CompletedTask;

@@ -1,7 +1,11 @@
 ﻿@page "/Register"
 <h3>Welcome, New User!</h3>
 @using Blazor.Services
+@inject IUserService userService
+@using global::Shared.DTOs
 @using global::Shared.Models
+@using HttpClients.ClientInterfaces
+@using Microsoft.AspNetCore.Components
 @inject IAuthService authService
 @inject NavigationManager navMgr
 
@@ -10,25 +14,28 @@
         <div class="card">
             <h3>Register</h3>
             <div class="field">
-                <label ><span class =" oi oi-person"> Username: </span></label>
+                <label >
+                    <span class=" oi oi-person"> Username: </span>
+                </label>
                 <input type="text" @bind="userName"/>
             </div>
             <div class="field">
-                <label style="text-align: center ; padding: 4px"><span class =" oi oi-lock-locked"> Password: </span></label>
+                <label style="text-align: center ; padding: 4px">
+                    <span class=" oi oi-lock-locked"> Password: </span>
+                </label>
                 <input type="password" @bind="password"/>
             </div>
-            @if (!string.IsNullOrEmpty(errorLabel))
+            @if (!string.IsNullOrEmpty(resultMsg))
             {
                 <div class="field">
                     <label style="color: red">
-                        @errorLabel
-                    </label>
+                        @resultMsg</label>
                 </div>
             }
-           
-        <div class="field">
-            <button class="loginbtn" title="Register" @onclick="RegisterAsync" >Register <span class="oi oi-key"></span></button>
-        </div>
+
+            <div class="field">
+                <button class="loginbtn" title="Register" @onclick="Create">Register <span class="oi oi-key"></span></button>
+            </div>
         </div>
     </NotAuthorized>
     <Authorized>
@@ -39,33 +46,29 @@
 </AuthorizeView>
 
 
-
-
 @code {
-    private string userName;
-    private string password;
-    private string errorLabel;
-    private User user;
+    private string userName = "";
+    private string password = "";
+    private string resultMsg = "";
+    private string color = "";
 
-    
-    private async Task RegisterAsync()
+    private async Task Create()
     {
-        errorLabel = "";
+        resultMsg = "";
+
         try
         {
-            user = new User
-            {
-                UserName = userName,
-                Password = password
-            };
-            Console.WriteLine(user.UserName);
-            await authService.RegisterAsync(user);
-            navMgr.NavigateTo("/Register");
+            await userService.Create(new UserCreationDto(userName,password));
+            userName = "";
+            resultMsg = "User successfully created";
+            color = "green";
         }
         catch (Exception e)
         {
             Console.WriteLine(e);
-            errorLabel = $"Error: {e.Message}";
+            resultMsg = e.Message;
+           
         }
     }
+
 }

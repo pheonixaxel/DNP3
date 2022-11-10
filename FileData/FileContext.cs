@@ -12,29 +12,29 @@ public class FileContext
     {
         get
         {
-            LoadData();
+            LoadDataPosts();
             return dataContainer!.Posts;
         }
     }
-    
+
     public ICollection<User> Users
     {
         get
         {
-            LoadData();
+            LoadDataUsers();
             return dataContainer!.Users;
         }
     }
 
-    public ICollection<SubPost> SubPosts
+    /*public ICollection<SubPost> SubPosts
     {
         get
         {
             LoadData();
             return dataContainer!.SubPosts;
         }
-    }
-    private void LoadData()
+    }*/
+    private void LoadDataUsers()
     {
         if (dataContainer != null)
         {
@@ -46,17 +46,35 @@ public class FileContext
             dataContainer = new()
             {
                 Users = new List<User>(),
-                Posts = new List<Post>(),
-                SubPosts = new List<SubPost>()
             };
             return;
         }
-        
+
         string content = File.ReadAllText(filePath);
         dataContainer = JsonSerializer.Deserialize<DataContainer>(content);
     }
-    
-    public void SaveChanges()
+
+    private void LoadDataPosts()
+    {
+        if (dataContainer != null)
+        {
+            return;
+        }
+
+        if (!File.Exists(filePath))
+        {
+            dataContainer = new()
+            {
+                Posts = new List<Post>()
+            };
+            return;
+        }
+
+        string content = File.ReadAllText(filePath);
+        dataContainer = JsonSerializer.Deserialize<DataContainer>(content);
+    }
+
+    public void SaveChangesUser()
     {
         string content = JsonSerializer.Serialize(dataContainer, new JsonSerializerOptions()
         {
@@ -64,6 +82,17 @@ public class FileContext
         });
 
         File.WriteAllText(filePath, content);
+        dataContainer = null;
+    }
+
+    public void SaveChangesPost()
+    {
+        string content = JsonSerializer.Serialize(dataContainer, new JsonSerializerOptions()
+        {
+            WriteIndented = true
+        });
+
+        File.WriteAllText("postData.json", content);
         dataContainer = null;
     }
 }

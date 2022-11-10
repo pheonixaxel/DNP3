@@ -23,7 +23,7 @@ public class UserFileDao : IUserDao
         user.Id = userId;
         
         context.Users.Add(user);
-        context.SaveChanges();
+        context.SaveChangesUser();
         
         return Task.FromResult(user);
     }

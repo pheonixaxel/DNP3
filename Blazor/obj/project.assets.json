@@ -314,6 +314,19 @@
           "bin/placeholder/FileData.dll": {}
         }
       },
+      "HttpClients/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HttpClients.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HttpClients.dll": {}
+        }
+      },
       "WebAPI/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -955,6 +968,11 @@
       "path": "../FileData/FileData.csproj",
       "msbuildProject": "../FileData/FileData.csproj"
     },
+    "HttpClients/1.0.0": {
+      "type": "project",
+      "path": "../HttpClients/HttpClients.csproj",
+      "msbuildProject": "../HttpClients/HttpClients.csproj"
+    },
     "WebAPI/1.0.0": {
       "type": "project",
       "path": "../WebAPI/WebAPI.csproj",
@@ -963,24 +981,25 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "HttpClients >= 1.0.0",
       "Microsoft.AspNetCore.Authorization >= 7.0.0",
       "WebAPI >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Andi\\.nuget\\packages\\": {}
+    "C:\\Users\\tothi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andi\\IdeaProjects\\DNP3\\Blazor\\Blazor.csproj",
+      "projectUniqueName": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Blazor\\Blazor.csproj",
       "projectName": "Blazor",
-      "projectPath": "C:\\Users\\Andi\\IdeaProjects\\DNP3\\Blazor\\Blazor.csproj",
-      "packagesPath": "C:\\Users\\Andi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andi\\IdeaProjects\\DNP3\\Blazor\\obj\\",
+      "projectPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Blazor\\Blazor.csproj",
+      "packagesPath": "C:\\Users\\tothi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Blazor\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Andi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\tothi\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -992,8 +1011,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Andi\\IdeaProjects\\DNP3\\WebAPI\\WebAPI.csproj": {
-              "projectPath": "C:\\Users\\Andi\\IdeaProjects\\DNP3\\WebAPI\\WebAPI.csproj"
+            "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\HttpClients\\HttpClients.csproj": {
+              "projectPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\HttpClients\\HttpClients.csproj"
+            },
+            "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\WebAPI\\WebAPI.csproj": {
+              "projectPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\WebAPI\\WebAPI.csproj"
             }
           }
         }
@@ -1032,7 +1054,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
