@@ -209,3 +209,6 @@ C:\Users\Andi\IdeaProjects\DNP3\Blazor\obj\Debug\net6.0\Blazor.csproj.CopyComple
 C:\Users\tothi\OneDrive\Documents\GitHub\DNP3\Blazor\bin\Debug\net6.0\HttpClients.dll
 C:\Users\tothi\OneDrive\Documents\GitHub\DNP3\Blazor\bin\Debug\net6.0\HttpClients.pdb
 C:\Users\tothi\OneDrive\Documents\GitHub\DNP3\Blazor\bin\Debug\net6.0\data.json
+C:\Users\Andi\IdeaProjects\DNP3\Blazor\bin\Debug\net6.0\data.json
+C:\Users\Andi\IdeaProjects\DNP3\Blazor\bin\Debug\net6.0\HttpClients.dll
+C:\Users\Andi\IdeaProjects\DNP3\Blazor\bin\Debug\net6.0\HttpClients.pdb

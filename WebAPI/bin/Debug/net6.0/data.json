@@ -14,6 +14,22 @@
       "Id": 3,
       "UserName": "1234556",
       "Password": "123"
+    },
+    {
+      "Id": 4,
+      "UserName": "alexbistrita",
+      "Password": "alex"
+    },
+    {
+      "Id": 5,
+      "UserName": "janhamburger",
+      "Password": "jan"
+    },
+    {
+      "Id": 6,
+      "UserName": "bhupasplgnmstr",
+      "Password": "randers"
     }
-  ]
+  ],
+  "Posts": null
 }

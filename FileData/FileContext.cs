@@ -61,7 +61,7 @@ public class FileContext
             return;
         }
 
-        if (!File.Exists(filePath))
+        if (!File.Exists("postData.json"))
         {
             dataContainer = new()
             {
@@ -70,7 +70,7 @@ public class FileContext
             return;
         }
 
-        string content = File.ReadAllText(filePath);
+        string content = File.ReadAllText("postData.json");
         dataContainer = JsonSerializer.Deserialize<DataContainer>(content);
     }
 

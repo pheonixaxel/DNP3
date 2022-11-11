@@ -987,19 +987,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tothi\\.nuget\\packages\\": {}
+    "C:\\Users\\Andi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Blazor\\Blazor.csproj",
+      "projectUniqueName": "C:\\Users\\Andi\\IdeaProjects\\DNP3\\Blazor\\Blazor.csproj",
       "projectName": "Blazor",
-      "projectPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Blazor\\Blazor.csproj",
-      "packagesPath": "C:\\Users\\tothi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Blazor\\obj\\",
+      "projectPath": "C:\\Users\\Andi\\IdeaProjects\\DNP3\\Blazor\\Blazor.csproj",
+      "packagesPath": "C:\\Users\\Andi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Andi\\IdeaProjects\\DNP3\\Blazor\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\tothi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Andi\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -1011,11 +1011,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\HttpClients\\HttpClients.csproj": {
-              "projectPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\HttpClients\\HttpClients.csproj"
+            "C:\\Users\\Andi\\IdeaProjects\\DNP3\\HttpClients\\HttpClients.csproj": {
+              "projectPath": "C:\\Users\\Andi\\IdeaProjects\\DNP3\\HttpClients\\HttpClients.csproj"
             },
-            "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\WebAPI\\WebAPI.csproj": {
-              "projectPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\WebAPI\\WebAPI.csproj"
+            "C:\\Users\\Andi\\IdeaProjects\\DNP3\\WebAPI\\WebAPI.csproj": {
+              "projectPath": "C:\\Users\\Andi\\IdeaProjects\\DNP3\\WebAPI\\WebAPI.csproj"
             }
           }
         }
@@ -1054,7 +1054,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

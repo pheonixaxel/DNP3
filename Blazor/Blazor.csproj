@@ -23,6 +23,8 @@
       <None Update="Pages\loginbuttons.razor.css">
         <DependentUpon>LoginButtons.razor</DependentUpon>
       </None>
+      <None Include="wwwroot\img\bubble.png" />
+      <None Include="wwwroot\img\bubblebg.jpg" />
     </ItemGroup>
 
 </Project>
