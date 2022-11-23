@@ -2,18 +2,16 @@
 
 public class PostUpdateDto
 {
-    public PostUpdateDto(int? belongsToId, int? ownerId, int id, string? title, string? body)
+    public PostUpdateDto(int id)
     {
-        BelongsToId = belongsToId;
-        OwnerId = ownerId;
+        
         Id = id;
-        Title = title;
-        Body = body;
+        
     }
 
-    public int? BelongsToId { get; }
-    public int? OwnerId { get; }
-    public int Id { get; }
-    public string? Title { get; }
-    public string? Body { get; }
+    public bool? IsCompleted { get; set; }
+    public int? OwnerId { get;  set; }
+    public int Id { get; set; }
+    public string? Title { get; set; }
+    public string? Description { get; set; }
 }

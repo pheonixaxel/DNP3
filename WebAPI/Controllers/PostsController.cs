@@ -3,6 +3,7 @@ using Application.LogicInterfaces;
 using Domain;
 using Domain.DTOs;
 using Microsoft.AspNetCore.Mvc;
+
 using Shared.DTOs;
 using Shared.Models;
 
@@ -13,7 +14,7 @@ namespace WebAPI.Controllers;
 public class PostsController : ControllerBase
 {
     private readonly IPostLogic postLogic;
-    private readonly PostCreationDto pcdto;
+    
 
     public PostsController(IPostLogic postLogic)
     {
@@ -34,17 +35,16 @@ public class PostsController : ControllerBase
             return StatusCode(500, e.Message);
         } 
     }
-    
-    
-    [HttpGet]
-    [Route("/Post/")]
-    public async Task<ActionResult<Post?>> GetByIdAsync([FromQuery] int id)
+
+
+
+    [HttpPatch]
+    public async Task<ActionResult> UpdateAsync([FromBody] PostUpdateDto dto)
     {
         try
         {
-            Console.WriteLine(id);
-            Post? post = await postLogic.GetByIdAsync(id);
-            return Ok(post);
+            await postLogic.UpdateAsync(dto);
+            return Ok();
         }
         catch (Exception e)
         {
@@ -52,15 +52,14 @@ public class PostsController : ControllerBase
             return StatusCode(500, e.Message);
         }
     }
-    
-
-    [HttpDelete]
-    public async Task<ActionResult> DeleteAsync([FromQuery] int id)
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<Post>>> GetAsync([FromQuery] int? userId, [FromQuery] string? userName,[FromQuery] string? titleContains, [FromQuery] bool? completedStatus)
     {
         try
         {
-            await postLogic.DeleteAsync(id);
-            return Ok();
+            SearchPostParametersDto parameters = new(userId,userName,titleContains, completedStatus);
+            var posts = await postLogic.GetAsync(parameters);
+            return Ok(posts);
         }
         catch (Exception e)
         {

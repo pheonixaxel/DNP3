@@ -7,9 +7,7 @@ public interface IUserDao
 {
     Task<User> CreateAsync(User user);
     Task<User> GetByUsernameAsync(string userName);
-    Task<User> CreateAsync(UserCreationDto userCreationDto);
-    Task<IEnumerable<User>> GetAsync();
+    Task<IEnumerable<User>> GetAsync(SearchUserParameterDto searchPostParametersDto);
     Task<User?> GetByIdAsync(int id);
-    Task DeleteAsync(int id);
-    Task UpdateAsync(User updated);
+   
 }

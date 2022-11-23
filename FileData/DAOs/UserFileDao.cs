@@ -24,37 +24,30 @@ public class UserFileDao : IUserDao
         
         context.Users.Add(user);
         context.SaveChangesUser();
-        
         return Task.FromResult(user);
     }
+    
+    
     public Task<User?> GetByUsernameAsync(string userName)
     {
         User? existing = context.Users.FirstOrDefault(u => u.UserName.Equals(userName, StringComparison.OrdinalIgnoreCase));
         return Task.FromResult(existing);
     }
 
-    public Task<User> CreateAsync(UserCreationDto userCreationDto)
+    public Task<IEnumerable<User>> GetAsync(SearchUserParameterDto searchPostParametersDto)
     {
-        throw new NotImplementedException();
-    }
+        IEnumerable<User> users = context.Users.AsEnumerable();
+        if (searchPostParametersDto.UsernameContains != null)
+        {
+            users = context.Users.Where(u => u.UserName.Contains(searchPostParametersDto.UsernameContains, StringComparison.OrdinalIgnoreCase));
+        }
 
-    public Task<IEnumerable<User>> GetAsync()
-    {
-        throw new NotImplementedException();
+        return Task.FromResult(users);
     }
-
     public Task<User?> GetByIdAsync(int id)
-    {
-        return Task.FromResult(context.Users.FirstOrDefault(u => u.Id == id));
+    {   
+        User? existing = context.Users.FirstOrDefault(u => u.Id == id);
+        return Task.FromResult(existing);
     }
-
-    public Task DeleteAsync(int id)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task UpdateAsync(User updated)
-    {
-        throw new NotImplementedException();
-    }
+    
 }

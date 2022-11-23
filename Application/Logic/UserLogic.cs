@@ -1,6 +1,8 @@
 ﻿using Application.LogicInterfaces;
 using Shared.DTOs;
 using Shared.Models;
+using Domain.DTOs;
+
 
 namespace Application.Logic;
 
@@ -47,4 +49,10 @@ public class UserLogic : IUserLogic
 
         if (userName.Length > 15)
             throw new Exception("Username must be less than 16 characters!");    }
+    
+    public Task<IEnumerable<User>> GetAsync(SearchUserParameterDto searchParameters)
+    {
+        return userDao.GetAsync(searchParameters);
+    }
+
 }

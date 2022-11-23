@@ -1,6 +1,7 @@
 ﻿using System.Text.Json;
 using Shared.Models;
 
+
 namespace FileData;
 
 public class FileContext
@@ -13,7 +14,7 @@ public class FileContext
         get
         {
             LoadDataPosts();
-            return dataContainer!.Posts;
+            return dataContainer!.Post;
         }
     }
 
@@ -65,7 +66,7 @@ public class FileContext
         {
             dataContainer = new()
             {
-                Posts = new List<Post>()
+                Post = new List<Post>()
             };
             return;
         }

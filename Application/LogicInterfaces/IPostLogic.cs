@@ -1,4 +1,5 @@
-﻿using Shared.Models;
+﻿using Domain.DTOs;
+using Shared.Models;
 using Shared.DTOs;
 
 
@@ -10,6 +11,6 @@ public interface IPostLogic
 {
     Task<Post> CreateAsync(PostCreationDto postCreationDto);
     Task<Post?> GetByIdAsync(int id);
-    Task<IEnumerable<Post>> GetAsync(string? subForm);
-    Task DeleteAsync(int id);
+    Task<IEnumerable<Post>> GetAsync(SearchPostParametersDto searchPostParametersDto);
+    Task UpdateAsync(PostUpdateDto post);
 }

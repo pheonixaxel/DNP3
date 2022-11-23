@@ -3,9 +3,19 @@
 public class Post
 {
     public int Id { get; set; }
-    public string Title { get; set; }
-    public string Content { get; set; }
-    public DateTime Created { get; set; }
-    public DateTime? Updated { get; set; }
-    public User OwnerId { get; set; }
+    public User Owner { get; }
+    public string Title { get; }
+    
+    public string Description { get; }
+    public bool IsCompleted { get; }
+    
+
+    public Post(User owner, string title, string description, bool isCompleted)
+    {
+        Owner = owner;
+        Title = title;
+        Description = description;
+        IsCompleted = isCompleted;
+    }
+
 }

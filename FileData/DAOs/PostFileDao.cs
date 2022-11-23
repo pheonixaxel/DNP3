@@ -1,6 +1,7 @@
 ﻿using Application.DaoInterfaces;
 using Domain;
 using FileData;
+using Shared.DTOs;
 using Shared.Models;
 
 namespace FileDataAccess.DAOs;
@@ -8,11 +9,12 @@ namespace FileDataAccess.DAOs;
 public class PostFileDao : IPostDao
 {
     public readonly FileContext context;
-    
+
     public PostFileDao(FileContext context)
     {
         this.context = context;
     }
+
     public Task<Post> CreateAsync(Post post)
     {
         int id = 1;
@@ -23,33 +25,27 @@ public class PostFileDao : IPostDao
         }
 
         post.Id = id;
-        
+
         context.Posts.Add(post);
         context.SaveChangesPost();
 
         return Task.FromResult(post);
     }
-
-    public Task<IEnumerable<Post>> GetAsync(string? subForm)
-    {
-        IEnumerable<Post> posts = context.Posts.AsEnumerable();
-        
-        return Task.FromResult(posts);
-    }
+    
 
     public Task<Post?> GetByIdAsync(int id)
     {
-        Post? toGet = null;
-        foreach (var post in context.Posts)
-        {
-            if (post.Id == id)
-            {
-                toGet = post;
-                break;
-            }
-        }
+        Post? existing = context.Posts.FirstOrDefault(p => p.Id == id);  
+        return Task.FromResult(existing);
+        
+    }
 
-        return Task.FromResult(toGet);
+    public Task<User?> GetByIdAsyncPost(int id)
+    {
+        User? existing = context.Users.FirstOrDefault(u =>
+            u.Id == id
+        );
+        return Task.FromResult(existing);
     }
 
     public Task DeleteAsync(int id)
@@ -81,5 +77,35 @@ public class PostFileDao : IPostDao
         }
 
         return Task.CompletedTask;
+    }
+
+    public Task<IEnumerable<Post>> GetAsync(SearchPostParametersDto searchParameters)
+    {
+        IEnumerable<Post> result = context.Posts.AsEnumerable();
+
+
+        if (!string.IsNullOrEmpty(searchParameters.TitleContains))
+        {
+            result = result.Where(p =>
+                p.Title.Contains(searchParameters.TitleContains, StringComparison.OrdinalIgnoreCase));
+        }
+
+        if (searchParameters.UserId != null)
+        {
+            result = result.Where(p => p.Owner.Id == searchParameters.UserId);
+        }
+
+        if (!string.IsNullOrEmpty(searchParameters.UserName))
+        {
+            result = context.Posts.Where(p =>
+                p.Owner.UserName.Equals(searchParameters.UserName, StringComparison.OrdinalIgnoreCase));
+        }
+
+        if (searchParameters.completedStatus != null)
+        {
+            result = result.Where(p => p.IsCompleted == searchParameters.completedStatus);
+        }
+
+        return Task.FromResult(result);
     }
 }

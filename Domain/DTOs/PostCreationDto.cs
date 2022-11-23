@@ -4,16 +4,25 @@ namespace Shared.DTOs;
 
 public class PostCreationDto
 {
-    public string Title { get; set; }
-    public string Content { get; set; }
-    public int OwnerId { get; set; }
-    public int PostId { get; set; }
+    public int Id { get; set; }
+    public User Owner { get; }
+    public string Title { get; }
+    
+    public string Description { get; }
+    public bool IsCompleted { get; }
+    
 
-    public PostCreationDto(string title, string content, int ownerId, int postId)
+    public PostCreationDto(int id, string title, string description, bool isCompleted)
     {
+        Id = id;
         Title = title;
-        Content = content;
-        OwnerId = ownerId;
-        PostId = postId;
+        Description = description;
+        IsCompleted = isCompleted;
+    }
+    public PostCreationDto(int selectedUserId, string postTitle, string postDesc)
+    {
+        Id = selectedUserId;
+        Title = postTitle;
+        Description = postDesc;
     }
 }
