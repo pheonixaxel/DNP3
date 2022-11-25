@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Blazor\\Blazor.csproj": {}
+    "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Blazor\\Blazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Application\\Application.csproj": {
+    "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\tothi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Application\\obj\\",
+        "projectPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\alexc\\.nuget\\packages\\",
+        "outputPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tothi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\alexc\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Domain\\Domain.csproj"
+              "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Domain\\Domain.csproj"
               }
             }
           }
@@ -63,21 +63,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Blazor\\Blazor.csproj": {
+    "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Blazor\\Blazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Blazor\\Blazor.csproj",
+        "projectUniqueName": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Blazor\\Blazor.csproj",
         "projectName": "Blazor",
-        "projectPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Blazor\\Blazor.csproj",
-        "packagesPath": "C:\\Users\\tothi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Blazor\\obj\\",
+        "projectPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Blazor\\Blazor.csproj",
+        "packagesPath": "C:\\Users\\alexc\\.nuget\\packages\\",
+        "outputPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Blazor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tothi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\alexc\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -89,8 +89,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\WebAPI\\WebAPI.csproj": {
-                "projectPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\WebAPI\\WebAPI.csproj"
+              "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\RESTClient\\RESTClient.csproj": {
+                "projectPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\RESTClient\\RESTClient.csproj"
+              },
+              "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\WebAPI\\WebAPI.csproj": {
+                "projectPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\WebAPI\\WebAPI.csproj"
               }
             }
           }
@@ -129,21 +132,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Domain\\Domain.csproj": {
+    "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\tothi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Domain\\obj\\",
+        "projectPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\alexc\\.nuget\\packages\\",
+        "outputPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tothi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\alexc\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -188,21 +191,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\FileData\\FileData.csproj": {
+    "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\EfcDataAccess\\EfcDataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\FileData\\FileData.csproj",
-        "projectName": "FileData",
-        "projectPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\FileData\\FileData.csproj",
-        "packagesPath": "C:\\Users\\tothi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\FileData\\obj\\",
+        "projectUniqueName": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\EfcDataAccess\\EfcDataAccess.csproj",
+        "projectName": "EfcDataAccess",
+        "projectPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\EfcDataAccess\\EfcDataAccess.csproj",
+        "packagesPath": "C:\\Users\\alexc\\.nuget\\packages\\",
+        "outputPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\EfcDataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tothi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\alexc\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -214,8 +217,81 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Application\\Application.csproj"
+              "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Application\\Application.csproj": {
+                "projectPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Application\\Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\FileData\\FileData.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\FileData\\FileData.csproj",
+        "projectName": "FileData",
+        "projectPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\FileData\\FileData.csproj",
+        "packagesPath": "C:\\Users\\alexc\\.nuget\\packages\\",
+        "outputPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\FileData\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alexc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Application\\Application.csproj": {
+                "projectPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Application\\Application.csproj"
               }
             }
           }
@@ -245,21 +321,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\WebAPI\\WebAPI.csproj": {
+    "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\RESTClient\\RESTClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\WebAPI\\WebAPI.csproj",
-        "projectName": "WebAPI",
-        "projectPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\WebAPI\\WebAPI.csproj",
-        "packagesPath": "C:\\Users\\tothi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\WebAPI\\obj\\",
+        "projectUniqueName": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\RESTClient\\RESTClient.csproj",
+        "projectName": "RESTClient",
+        "projectPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\RESTClient\\RESTClient.csproj",
+        "packagesPath": "C:\\Users\\alexc\\.nuget\\packages\\",
+        "outputPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\RESTClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tothi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\alexc\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -271,11 +347,71 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\Application\\Application.csproj"
+              "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Application\\Application.csproj": {
+                "projectPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Application\\Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\WebAPI\\WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\WebAPI\\WebAPI.csproj",
+        "projectName": "WebAPI",
+        "projectPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\WebAPI\\WebAPI.csproj",
+        "packagesPath": "C:\\Users\\alexc\\.nuget\\packages\\",
+        "outputPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\WebAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alexc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Application\\Application.csproj": {
+                "projectPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\Application\\Application.csproj"
               },
-              "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\FileData\\FileData.csproj": {
-                "projectPath": "C:\\Users\\tothi\\OneDrive\\Documents\\GitHub\\DNP3\\FileData\\FileData.csproj"
+              "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\EfcDataAccess\\EfcDataAccess.csproj": {
+                "projectPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\EfcDataAccess\\EfcDataAccess.csproj"
+              },
+              "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\FileData\\FileData.csproj": {
+                "projectPath": "D:\\VIA\\DNP1\\AssignmentGroup10\\DNP3\\FileData\\FileData.csproj"
               }
             }
           }
@@ -322,7 +458,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

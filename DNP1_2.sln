@@ -10,6 +10,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileData", "FileData\FileDa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor", "Blazor\Blazor.csproj", "{4E729F1A-1C67-4851-8C1B-A299C64D3800}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfcDataAccess", "EfcDataAccess\EfcDataAccess.csproj", "{CB388F27-7EE3-4FA9-9B97-FF6328FCD926}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTClient", "RESTClient\RESTClient.csproj", "{02625F4E-EC29-41E9-8F9A-8B1984F53763}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +40,13 @@ Global
 		{4E729F1A-1C67-4851-8C1B-A299C64D3800}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E729F1A-1C67-4851-8C1B-A299C64D3800}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E729F1A-1C67-4851-8C1B-A299C64D3800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB388F27-7EE3-4FA9-9B97-FF6328FCD926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB388F27-7EE3-4FA9-9B97-FF6328FCD926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB388F27-7EE3-4FA9-9B97-FF6328FCD926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB388F27-7EE3-4FA9-9B97-FF6328FCD926}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02625F4E-EC29-41E9-8F9A-8B1984F53763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02625F4E-EC29-41E9-8F9A-8B1984F53763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02625F4E-EC29-41E9-8F9A-8B1984F53763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02625F4E-EC29-41E9-8F9A-8B1984F53763}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

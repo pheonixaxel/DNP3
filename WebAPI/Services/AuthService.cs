@@ -2,40 +2,30 @@
 using System.Security.Claims;
 using System.Text;
 using System.Text.Json;
+using Application.IUserDao;
+using Application.Logic;
+using Application.LogicInterfaces;
 using Shared.DTOs;
 using Shared.Models;
 
 namespace WebAPI.Services;
 
 public class AuthService : IAuthService
-    {
+{
+    private readonly UserLoginDto userLogicdto;
+    private readonly IUserDao userDao;
 
-        private readonly IList<User> users = new List<User>
-        {
-            new User
-            {
-                Id = 36,
-                Email = "trmo@via.dk",
-                UserName = "trmo",
-                Password = "1234"
-                
-            },
-            new User
-            {
-                Id = 35,
-                Email = "username@gmail.com",
-                UserName = "username",
-                Password = "password"
-            }
-        };
+    public AuthService(IUserDao userDao)
+    {
+        this.userDao = userDao;
+    }
         
         private readonly HttpClient client = new ();
 
-        public Task<User> ValidateUser(string username, string password)
+        public async Task<User> ValidateUser(string username, string password)
         {
-            User? existingUser = users.FirstOrDefault(u => 
-                u.UserName.Equals(username, StringComparison.OrdinalIgnoreCase));
-        
+            User? existingUser = await userDao.GetByUsernameAsync(username);
+
             if (existingUser == null)
             {
                 throw new Exception("User not found");
@@ -46,33 +36,17 @@ public class AuthService : IAuthService
                 throw new Exception("Password mismatch");
             }
 
-            return Task.FromResult(existingUser);
+            return existingUser;
+        }
+
+        public Task RegisterUser(User user)
+        {
+            throw new NotImplementedException();
         }
 
         public Task<User> GetUser(string username, string password)
         {
             throw new NotImplementedException();
-        }
-
-        public Task RegisterUser(User user)
-        {
-
-            if (string.IsNullOrEmpty(user.UserName))
-            {
-                throw new ValidationException("Username cannot be null");
-            }
-
-            if (string.IsNullOrEmpty(user.Password))
-            {
-                throw new ValidationException("Password cannot be null");
-            }
-            // Do more user info validation here
-        
-            // save to persistence instead of list
-        
-            users.Add(user);
-             
-            return Task.CompletedTask;
         }
         public static string? Jwt { get; private set; } = "";
     
@@ -101,16 +75,20 @@ public class AuthService : IAuthService
 
         public async Task LoginAsync(string username, string password)
         {
-            UserCreationDto userCreationDto = new(username, password)
+            /*
+            User user = await userLogicdto.(username, password);
+            */
+            
+            UserLoginDto userLoginDto = new(username, password)
             {
                 UserName = username,
                 Password = password
             };
 
-            string userAsJson = JsonSerializer.Serialize(userCreationDto);
+            string userAsJson = JsonSerializer.Serialize(userLoginDto);
             StringContent content = new(userAsJson, Encoding.UTF8, "application/json");
 
-            HttpResponseMessage response = await client.PostAsync("http://localhost:7111/auth/login", content);
+            HttpResponseMessage response = await client.PostAsync("http://localhost:7055/auth/login", content);
             string responseContent = await response.Content.ReadAsStringAsync();
 
             if (!response.IsSuccessStatusCode)

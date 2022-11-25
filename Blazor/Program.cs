@@ -1,4 +1,5 @@
 using System.Text;
+using Application.LogicInterfaces;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Blazor.Data;
@@ -6,7 +7,7 @@ using Blazor.Services.Http;
 using Blazor.Services;
 using Blazor.Auth;
 using Microsoft.AspNetCore.Components.Authorization;
-
+using RESTClient.HttpCalls;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,6 +19,8 @@ builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthProvider>();
 builder.Services.AddScoped(sp => new HttpClient());
 builder.Services.AddScoped<IAuthService, JwtAuthService>();
 builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddScoped<IUserLogic, UserHttpService>();
 
 var app = builder.Build();
 

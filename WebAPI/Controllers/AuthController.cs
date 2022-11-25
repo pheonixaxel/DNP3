@@ -59,7 +59,7 @@ public class AuthController : ControllerBase
         return serializedToken;
     }
     [HttpPost, Route("login")]
-    public async Task<ActionResult> Login([FromBody] UserCreationDto userLoginDto)
+    public async Task<ActionResult> Login([FromBody] UserLoginDto userLoginDto)
     {
         try
         {

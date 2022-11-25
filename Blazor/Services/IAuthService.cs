@@ -8,7 +8,7 @@ public interface IAuthService
     Task LoginAsync(string username, string password);
     Task LogoutAsync();
 
-    Task RegisterAsync(User user);
+    Task CreateAsync(User user);
     /*public Task<ClaimsPrincipal> GetAuthAsync();*/
 
     Action<ClaimsPrincipal> OnAuthStateChanged { get; set; }

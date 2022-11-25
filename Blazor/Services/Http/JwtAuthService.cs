@@ -57,7 +57,7 @@ public class JwtAuthService : IAuthService
 
     public async Task LoginAsync(string username, string password)
     {
-        UserCreationDto userLoginDto = new(username, password)
+        UserLoginDto userLoginDto = new(username, password)
         {
             UserName = username,
             Password = password
@@ -92,7 +92,7 @@ public class JwtAuthService : IAuthService
         return Task.CompletedTask;
     }
 
-    public async Task RegisterAsync(User user)
+    public async Task CreateAsync(User user)
     {
         string userAsJson = JsonSerializer.Serialize(user);
         StringContent content = new(userAsJson, Encoding.UTF8, "application/json");

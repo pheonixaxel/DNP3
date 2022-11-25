@@ -26,12 +26,13 @@ public class PostLogic : IPostLogic
             throw new ArgumentException("User does not exist");
         }
 
-        Post post = new Post
+        Post post = new Post(postToCreate.Title, postToCreate.Content, user);
+        /*Post post = new Post
         {
             Title = postToCreate.Title,
             Content = postToCreate.Content,
             OwnerId = user
-        };
+        };*/
         Post created = await postDao.CreateAsync(post);
         return created;
     }
